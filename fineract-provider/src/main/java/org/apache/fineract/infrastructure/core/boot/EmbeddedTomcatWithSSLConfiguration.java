@@ -40,7 +40,6 @@ public class EmbeddedTomcatWithSSLConfiguration {
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
         tomcat.setContextPath(getContextPath());
-        tomcat.addAdditionalTomcatConnectors(createSslConnector());
         return tomcat;
     }
 

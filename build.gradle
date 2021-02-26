@@ -214,8 +214,9 @@ allprojects  {
     // https://github.com/diffplug/spotless/tree/main/plugin-gradle
     spotless {
         format 'misc', {
-            target '**/*.md', '**/*.properties', '**/.gitignore', '**/.openapi-generator-ignore', '**/*.yml', '**/*.xml', '**/**.json', '**/*.sql'
-            targetExclude '**/build/**', '**/bin/**', '**/.settings/**', '**/.idea/**', '**/.gradle/**', '**/gradlew.bat'
+            //            target '**/*.md', '**/*.properties', '**/.gitignore', '**/.openapi-generator-ignore', '**/*.yml', '**/*.xml', '**/**.json', '**/*.sql'
+            //            targetExclude '**/build/**', '**/bin/**', '**/.settings/**', '**/.idea/**', '**/.gradle/**', '**/gradlew.bat'
+            target '**/*.java'
             indentWithSpaces(4)
             endWithNewline()
             trimTrailingWhitespace()
